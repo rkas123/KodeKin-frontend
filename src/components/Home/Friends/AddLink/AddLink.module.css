@@ -1,0 +1,30 @@
+.Input {
+  flex: 3;
+  font: inherit;
+  padding: 0.35rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.Input:focus {
+  outline: none;
+  border-color: #4f005f;
+  background: #f6dbfc;
+}
+
+.btn {
+  margin-right: 5px;
+}
+
+.container {
+  text-align: center;
+}
+
+.buttons {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}

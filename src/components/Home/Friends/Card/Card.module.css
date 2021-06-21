@@ -1,0 +1,52 @@
+.card {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  align-content: center;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  box-shadow: 5px 2px 2px #aaa;
+}
+
+h3 {
+  text-align: center;
+}
+
+.list {
+  padding: 0px;
+}
+
+.res {
+  display: inline-block;
+  padding: 2px 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+.res a:hover {
+  text-decoration: none;
+}
+
+.btn {
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid black;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  color: white;
+  background-color: #222;
+  border-color: white;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0px;
+  right: 14px;
+}

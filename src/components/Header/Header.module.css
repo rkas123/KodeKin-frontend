@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+  align-items: center;
+  height: 60px;
+}
+
+.title {
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.title:hover {
+  color: #aaa;
+}
+.btn {
+  margin-right: 40px;
+  height: 40px;
+  width: 80px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: black;
+  color: rgb(239, 239, 239);
+  border: 2px solid rgb(239, 239, 239);
+}

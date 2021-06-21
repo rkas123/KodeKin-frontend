@@ -1,0 +1,29 @@
+.container {
+  height: 80vh;
+  overflow-y: scroll;
+  border: 1px solid black;
+  text-align: center;
+  margin-right: 40px;
+}
+.contest {
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contest a:hover {
+  text-decoration: none;
+}
+.heading {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.contestname {
+  width: 90%;
+}
+.footer {
+  margin-bottom: 10px;
+}
+.footer a:hover {
+  text-decoration: none;
+}

@@ -1,0 +1,52 @@
+.platlink {
+  display: inline-block;
+  width: 40%;
+  margin: 10px 5px;
+  flex: 3;
+  font: inherit;
+  padding: 0.35rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.platlink:focus {
+  outline: none;
+  border-color: #4f005f;
+  background: #f6dbfc;
+}
+.container {
+  text-align: center;
+}
+
+.name {
+  flex: 3;
+  font: inherit;
+  padding: 0.35rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.name:focus {
+  outline: none;
+  border-color: #4f005f;
+  background: #f6dbfc;
+}
+
+.btn {
+  margin-top: 5px;
+  padding: 4px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.apply {
+  margin-right: 5px;
+}
+
+.cancel {
+  margin-left: 5px;
+}

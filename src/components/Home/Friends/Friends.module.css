@@ -1,0 +1,70 @@
+.Input {
+  flex: 3;
+  font: inherit;
+  padding: 0.35rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.Input:focus {
+  outline: none;
+  border-color: #4f005f;
+  background: #f6dbfc;
+}
+
+.btn {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.btn {
+  margin-right: 40px;
+  height: 40px;
+  width: 150px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background-color: black;
+  color: rgb(239, 239, 239);
+  border: 2px solid rgb(239, 239, 239);
+}
+
+.friendContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.paginationbtns {
+  margin-top: 40px;
+  width: 80%;
+  height: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.paginationbtns a {
+  padding: 10px;
+  margin: 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.paginationbtns a:hover {
+  background-color: aqua;
+}
+
+.paginationbtnActive a {
+  background-color: aqua;
+}
+
+.Search {
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 4px;
+}
