@@ -19,7 +19,6 @@ export const ContextProvider = (props) => {
     }
 
     const loginHandler = async (userData) => {
-        console.log("login handler");
         try{
             const data = await api.signin(userData);
             localStorage.setItem("profile",JSON.stringify(data.data));
