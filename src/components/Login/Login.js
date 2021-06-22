@@ -2,7 +2,7 @@ import {useReducer,useEffect,useState,useContext} from 'react';
 import context from '../../contexts/context';
 import classes from './Login.module.css';
 import {useHistory,Redirect} from 'react-router-dom';
-
+import Loader from '../../utils/Loader2/Loader2';
 
 const emailReducer = (state,action) => {
     if(action.type === "USER_INPUT")
@@ -25,6 +25,7 @@ const Login = () => {
     const history = useHistory();
     const ctx = useContext(context);
     const [formIsValid, setFormIsValid] = useState(false);
+    const [loader,setLoader] = useState(false);
 
     const [emailState, dispatchEmail] = useReducer(emailReducer, {
         value: '',
@@ -53,16 +54,18 @@ const Login = () => {
     };
     
     const submitHandler = async (event) => {
+        setLoader(true);
         event.preventDefault();
         try{
             const data = await ctx.onLogIn({email: emailState.value, password: passwordState.value});
             if(data)
             {
-                console.log("redirecting");
+                setLoader(false);
                 history.replace("/");
             }
             else
             {
+                setLoader(false);
                 console.log("Invalid Credentials");
             }
         }
@@ -70,7 +73,7 @@ const Login = () => {
         {
             console.log(error);
         }
-        
+        setLoader(false);
     };
 
     useEffect(() => {
