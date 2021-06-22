@@ -90,6 +90,8 @@ const Login = () => {
     {
         return <Redirect to ="/"/>
     }
+    if(loader)
+        return <Loader/>
     return (
         <div className = {classes.login}>
         <form onSubmit = {submitHandler}>
