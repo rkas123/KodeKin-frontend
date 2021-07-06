@@ -49,8 +49,8 @@ const Right = () => {
           return (
             <div className={classes.contest} key={`contest${idx}`}>
               <h4>
-                <a target="_blank" href={contest.href}>
-                  {contest.event}
+                <a target="_blank" href={contest.link}>
+                  {contest.name}
                 </a>
               </h4>
               <p>{fixTime(contest.start)}</p>
