@@ -22,9 +22,11 @@ const Right = () => {
 
   useEffect(() => {
     const fetchList = async () => {
+      const time = new Date().getTime();
+
       try {
         const data = await axios.get(
-          "https://uc-api.herokuapp.com/list/fetch?platforms=cf,cc,go,at,lc,fb&pagenumber=1&itemsperpage=10"
+          `https://uc-api.herokuapp.com/list/fetch?platforms=cf,cc,go,at,lc,fb&pagenumber=1&itemsperpage=10&start_gte=${time}`
         );
         setList(data.data.data);
         setErr(false);
